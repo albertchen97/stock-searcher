@@ -20,11 +20,11 @@ MacOS/Linux:
 . .venv/bin/activate
 ```
 
-Windows:
+<!-- Windows:
 
 ```bash
 .venv\Scripts\activate
-```
+``` -->
 
 ## 3. Install Flask
 
