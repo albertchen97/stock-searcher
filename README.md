@@ -1,18 +1,20 @@
 # Getting Started
 
-## 1. Create an environment
+## 1. Create an Virtual Environment for Flask
 
 ```bash
 python3 -m venv .venv
 ```
 
+*The ```-m``` flag tells Python to run a module as a script.*
+
 *If python3 is not a recognizable command, try:*
 
 ```bash
-python -m venv .venv
+Python -m venv .venv
 ```
 
-## 2. Activate the environment
+## 2. Activate the Virtual Environment
 
 MacOS/Linux:
 
@@ -32,7 +34,7 @@ MacOS/Linux:
 pip install -r requirements.txt
 ```
 
-## 4. Run the Flask app
+## 4. Run the Flask App
 
 ```bash
 flask --app application run
