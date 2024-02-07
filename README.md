@@ -1,41 +1,13 @@
-# Getting Started
+# 💹 Stock Searcher
 
-## 1. Create an Virtual Environment for Flask
+A Single-Page Application (SPA) that allows users to search for stock information.
 
-```bash
-python3 -m venv .venv
-```
+## 🎥 Demo
 
-*The ```-m``` flag tells Python to run a module as a script.*
+![demo](/demo/stock-searcher-demo.gif)
 
-<!-- *If python3 is not a recognizable command, try:*
+## 👨‍💻 Tech Stack
 
-```bash
-Python -m venv .venv
-``` -->
-
-## 2. Activate the Virtual Environment
-
-MacOS/Linux:
-
-```bash
-. .venv/bin/activate
-```
-
-<!-- Windows:
-
-```bash
-.venv\Scripts\activate
-``` -->
-
-## 3. Install Dependencies (including Flask)
-
-```bash
-pip install -r requirements.txt
-```
-
-## 4. Run the Flask App
-
-```bash
-flask --app application run
-```
+- **Front-End**: JavaScript, HTML, CSS
+- **Back-End**: Flask (Python)
+- **API for Stock Data**: [Tiingo API](https://www.tiingo.com/documentation/general/overview)
