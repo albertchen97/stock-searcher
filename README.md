@@ -39,9 +39,3 @@ pip install -r requirements.txt
 ```bash
 flask --app application run
 ```
-
-## Note
-
-*For demo purpose*, the API key is published with the ```.env``` file.
-
-If you would like to get your own API key, please feel free to register yours at [Tiingo](https://www.tiingo.com/).
