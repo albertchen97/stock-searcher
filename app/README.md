@@ -22,6 +22,8 @@ MacOS/Linux:
 . .venv/bin/activate
 ```
 
+*In case you want to deactivate: `. deactivate`*
+
 <!-- Windows:
 
 ```bash
