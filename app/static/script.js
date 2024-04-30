@@ -1,3 +1,8 @@
+/**
+ * Submits the form by fetching meta data for the given ticker.
+ *
+ * @return {void} No return value.
+ */
 function submitForm() {
 	const ticker = document.getElementById("ticker").value;
 	if (ticker.trim() !== "") {
@@ -118,6 +123,11 @@ function generateCompanyOutlookTable(data) {
 	}
 }
 
+/**
+ * Generates a table with stock summary data based on the provided data object.
+ *
+ * @param {JSON} data - The JSON object for all the stock data fetched from Tiingo
+ */
 function generateStockSummaryTable(data) {
 	const table = document.getElementById("stock-table");
 
@@ -172,7 +182,6 @@ function generateStockSummaryTable(data) {
 				valueCell.appendChild(
 					document.createTextNode(changePercentValue.toString())
 				);
-				// valueCell.appendChild(arrowImage);
 				break;
 
 			default:
