@@ -1,7 +1,7 @@
 /**
- * Submits the form by fetching meta data for the given ticker.
+ * onclick event handler: Get the ticker from the HTML form and pass it to fetchMetaData. 
  *
- * @return {void} No return value.
+ * @return {void} no return value.
  */
 function submitForm() {
 	const ticker = document.getElementById("ticker").value;
@@ -10,6 +10,11 @@ function submitForm() {
 	}
 }
 
+/**
+ * onclick event handler: Get the ticker from the HTML form and pass it to displayCompanyOutlook. 
+ *
+ * @return {void} no return value.
+ */
 function displayCompanyOutlook() {
 	const ticker = document.getElementById("ticker").value;
 	if (ticker.trim() !== "") {
@@ -17,6 +22,11 @@ function displayCompanyOutlook() {
 	}
 }
 
+/**
+ * onclick event handler: Get the ticker from the HTML form and pass it to fetchTopOfBook. 
+ *
+ * @return {void} no return value.
+ */
 function displayStockSummary() {
 	const ticker = document.getElementById("ticker").value;
 	if (ticker.trim() !== "") {
@@ -34,7 +44,7 @@ function fetchMetaData(ticker) {
 	const xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState === XMLHttpRequest.DONE) {
-			if (xhr.status === 200) {
+			if (xhrsubmitForm.status === 200) {
 				const data = JSON.parse(xhr.responseText);
 				console.log(data);
 				if (data === null) {
