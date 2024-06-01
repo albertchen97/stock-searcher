@@ -12,7 +12,7 @@ function submitForm() {
 
 /**
  * onclick event handler: Get the ticker from the HTML form and pass it to displayCompanyOutlook. 
- *
+ * 
  * @return {void} no return value.
  */
 function displayCompanyOutlook() {
@@ -40,11 +40,13 @@ function displayStockSummary() {
  * @param {string} ticker - The stock ticker symbol
  */
 function fetchMetaData(ticker) {
+	// API endpoint for meta data
 	const url = `/meta_data/${ticker}`;
+	// 
 	const xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState === XMLHttpRequest.DONE) {
-			if (xhrsubmitForm.status === 200) {
+			if (xhr.status === 200) {
 				const data = JSON.parse(xhr.responseText);
 				console.log(data);
 				if (data === null) {
