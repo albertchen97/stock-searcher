@@ -61,7 +61,7 @@ function fetchMetaData(ticker) {
 			}
 		}
 	};
-	xhr.open("GET", url);
+	xhr.open("GET", url, true);
 	xhr.send();
 }
 
@@ -89,7 +89,7 @@ function fetchTopOfBook(ticker) {
 			}
 		}
 	};
-	xhr.open("GET", url);
+	xhr.open("GET", url, true);
 	xhr.send();
 }
 
